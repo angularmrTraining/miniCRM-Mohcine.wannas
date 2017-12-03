@@ -2,15 +2,48 @@
   "contacts": [
     {
       "name": "Mohcine wannas",
-      "phone-number": "0673810027"
+      "phoneNumber": "0673810027"
     },
     {
       "name": "Test name",
-      "phone-number": "0683932029"
+      "phoneNumber": "0683932029"
     },
     {
       "name": "Test name2",
-      "phone-number": "0987433728"
+      "phoneNumber": "0987433728"
+    },    {
+      "name": "Mohcine wannas",
+      "phoneNumber": "0673810027"
+    },
+    {
+      "name": "Test name",
+      "phoneNumber": "0683932029"
+    },
+    {
+      "name": "Test name2",
+      "phoneNumber": "0987433728"
+    },    {
+      "name": "Mohcine wannas",
+      "phoneNumber": "0673810027"
+    },
+    {
+      "name": "Test name",
+      "phoneNumber": "0683932029"
+    },
+    {
+      "name": "Test name2",
+      "phoneNumber": "0987433728"
+    },    {
+      "name": "Mohcine wannas",
+      "phoneNumber": "0673810027"
+    },
+    {
+      "name": "Test name",
+      "phoneNumber": "0683932029"
+    },
+    {
+      "name": "Test name2",
+      "phoneNumber": "0987433728"
     }
   ]
 }

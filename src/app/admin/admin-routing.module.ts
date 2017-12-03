@@ -5,6 +5,7 @@ import { LayoutComponent } from './layout/layout.component';
 // pages
 import { MainPageComponent } from './main-page/main-page.component';
 import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
+import { ContactListComponent } from 'app/admin/contact-list/contact-list.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,7 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'main', pathMatch: 'full' },
       { path: 'main', component: MainPageComponent },
+      { path: 'contacts', component: ContactListComponent },
       { path: '**', component: PageNotFoundComponent },
     ]
   }

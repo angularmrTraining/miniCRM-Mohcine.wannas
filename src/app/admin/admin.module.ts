@@ -11,6 +11,8 @@ import { AuthModule } from '../auth/auth.module';
 import { MainService } from './main.service';
 import { AlertService } from '../alert.service';
 import { LayoutComponent } from './layout/layout.component';
+import { ContactService } from 'app/admin/contact.service';
+import { ContactListComponent } from 'app/admin/contact-list/contact-list.component';
 
 @NgModule({
   imports: [
@@ -21,10 +23,11 @@ import { LayoutComponent } from './layout/layout.component';
     ClarityModule,
     AuthModule
   ],
-  declarations: [MainPageComponent, LayoutComponent],
+  declarations: [MainPageComponent, LayoutComponent, ContactListComponent],
   providers: [
     MainService,
-    AlertService
+    AlertService,
+    ContactService
   ]
 })
 export class AdminModule { }

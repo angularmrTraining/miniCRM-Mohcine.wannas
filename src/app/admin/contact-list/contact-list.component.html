@@ -1,0 +1,20 @@
+
+
+      <div class="row">
+          <h1>Contact List</h1>
+          <clr-datagrid class="col-xs-12" *ngIf="contacts">
+              <clr-dg-column>Nom</clr-dg-column>
+              <clr-dg-column>Telephone</clr-dg-column>
+          
+              <clr-dg-row *ngFor="let contact of contacts">
+                  <clr-dg-cell>{{contact.name}}</clr-dg-cell>
+                  <clr-dg-cell>{{contact.phoneNumber}}</clr-dg-cell>
+              </clr-dg-row>
+          
+              <clr-dg-footer>
+                  {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}}
+                  of {{pagination.totalItems}} Contact
+                  <clr-dg-pagination #pagination [clrDgPageSize]="10" [clrDgTotalItems]=contacts.length></clr-dg-pagination>
+              </clr-dg-footer>
+          </clr-datagrid>
+      </div>

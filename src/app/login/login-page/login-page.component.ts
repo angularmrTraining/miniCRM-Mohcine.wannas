@@ -42,14 +42,14 @@ export class LoginPageComponent implements OnInit {
         const fullname = `${decodedToken.firstname} ${decodedToken.lastname}`;
 
         sessionStorage.setItem('token', token);
-        sessionStorage.setItem('fullname', fullname);
+        sessionStorage.setItem('fullname', 'admin');
         // hide spinner
         this.isLogging = false;
         // redirect to admin module
         this.router.navigate(['admin']);
       } else {
         this.isLogging = false;
-        this.alert.error('ไม่สามารถล๊อกอินเข้าสู่ระบบได้');
+        this.alert.error('erreur');
       }
     } catch (error) {
       this.isLogging = false;
