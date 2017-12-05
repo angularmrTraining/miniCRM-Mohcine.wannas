@@ -38,7 +38,7 @@ export class ContactFormComponent implements OnInit {
               this.loadContact(params['id']);
             } 
             break;
-          case 'edit':
+          case 'add':
             this.createForm();
             break;
           default :

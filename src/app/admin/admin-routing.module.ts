@@ -16,8 +16,8 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'main', pathMatch: 'full' },
       { path: 'main', component: MainPageComponent },
+      { path: 'contacts/:id/:state', component: ContactFormComponent},
       { path: 'contacts/:state', component: ContactFormComponent},
-      { path: 'contact/:id/:state', component: ContactFormComponent},
       { path: 'contacts', component: ContactListComponent },
       { path: '**', component: PageNotFoundComponent },
     ]

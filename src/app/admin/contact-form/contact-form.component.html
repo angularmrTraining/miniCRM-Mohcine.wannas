@@ -1,4 +1,6 @@
-<h1>Contact : Creation</h1>
+<h1 *ngIf="id;else h1Creation">Contact : Modification</h1>
+<ng-template  #h1Creation> Contact : Creation</ng-template>
+
 <form *ngIf="entityForm" [formGroup]="entityForm" class="form-validate form-horizontal mb-lg" role="form" name="entityForm" novalidate="" (submit)="submit($event, entityForm.value)">
     <div class="row">
     <div class="col-xs-12 col-sm-6">
