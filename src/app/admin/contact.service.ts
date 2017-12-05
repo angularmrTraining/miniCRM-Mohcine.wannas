@@ -37,4 +37,12 @@ export class ContactService {
             return res.json();
           });
       }
+
+      public delete(id: number): Observable<string> {
+        return this.http.delete(`${this.url}/contacts/${id}`)
+          .map((res: Response) => {
+            return res.json();
+          });
+      }
+
 }

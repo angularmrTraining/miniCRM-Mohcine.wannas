@@ -7,7 +7,7 @@ export class AlertService {
 
   constructor() { }
 
-  error(text = 'une erreur est survenue, Merci de réessayer plus tard') {
+  error(text = 'Une erreur est survenue, Merci de réessayer plus tard') {
 
     const option: SweetAlertOptions = {
       title: 'Erreur !',
@@ -45,13 +45,13 @@ export class AlertService {
 
   }
 
-  confirm(text = 'คุณต้องการดำเนินการนี้ ใช่หรือไม่?', ) {
+  confirm(text = 'Êtes vous sûr ?', ) {
     const option: SweetAlertOptions = {
       title: 'Attention ! ',
       text: text,
       type: 'warning',
       showCancelButton: true,
-      confirmButtonColor: '#3085d6',
+      confirmButtonColor: '#62a420',
       cancelButtonColor: '#d33',
       confirmButtonText: 'Oui, Je suis sûr !',
       cancelButtonText: 'Annulé'

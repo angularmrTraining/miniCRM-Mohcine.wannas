@@ -13,11 +13,6 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ContactFormComponent implements OnInit {
 
-  saveSucceed(): any {
-    this.alert.success("Super","Enregistrement effectuée par succès");
-    this.returnToList();
-  }
-
   entityForm : FormGroup;
   contacts : Contact[];
   model: Contact;
@@ -56,7 +51,7 @@ export class ContactFormComponent implements OnInit {
           this.createForm(resp)
         },
         error => {
-          this.alert.error("Erreur");
+          this.alert.error();
           this.returnToList();
         });
   }
@@ -77,6 +72,11 @@ export class ContactFormComponent implements OnInit {
 
   returnToList(){
     this.router.navigate(['admin/contacts'])
+  }
+
+  saveSucceed(): any {
+    this.alert.success("Super","Enregistrement effectuée par succès");
+    this.returnToList();
   }
 
   public submit($ev, value: any, callback?: (param: any) => void) {

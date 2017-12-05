@@ -18,7 +18,7 @@ export class ContactListComponent implements OnInit {
   ngOnInit() {
     this.contactService.getAll().subscribe(
       resp => this.contacts = resp,
-      error => this.alert.error('erreur')
+      error => this.alert.error()
     );
     
   }
@@ -32,7 +32,17 @@ export class ContactListComponent implements OnInit {
 
   delete(id:number) {
     if(id) {
-      this.alert.confirm("Êtes vous sûr de vouloir supprimer ce contact ?")
+      
+      this.alert.confirm("Êtes vous sûr de vouloir supprimer ce contact ?").then((res)=> {
+        if (res.value) {
+          this.alert.success("La suppression est effectuée avec succès");
+          this.contacts = this.contacts.filter(obj => obj.id!=id);
+        // result.dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
+        } else if (res.dismiss === 'cancel') {
+        }
+      },
+          error => this.alert.error()
+      );
     }
   }
 

@@ -7,12 +7,16 @@
               <clr-dg-column>Telephone</clr-dg-column>
               <clr-dg-column>Action</clr-dg-column>
               <clr-dg-row *clrDgItems="let contact of contacts">
-                  <clr-dg-cell>{{contact.name}}</clr-dg-cell>
+                  <clr-dg-cell>{{contact.name | titlecase}}</clr-dg-cell>
                   <clr-dg-cell>{{contact.phoneNumber}}</clr-dg-cell>
                   <clr-dg-cell>
                         <button class="btn btn-sm btn-icon btn-link" (click)="goToForm(contact.id)">
                                 <clr-icon shape="pencil" class="is-solid"></clr-icon>                               
                             Editer
+                        </button>
+                        <button class="btn btn-sm btn-icon btn-link" (click)="delete(contact.id)">
+                                <clr-icon shape="trash" class="is-solid"></clr-icon>                               
+                            Supprimer
                         </button>
                     </clr-dg-cell>
               </clr-dg-row>
