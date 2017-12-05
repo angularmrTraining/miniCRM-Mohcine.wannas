@@ -7,26 +7,26 @@ export class AlertService {
 
   constructor() { }
 
-  error(text = 'เกิดข้อผิดพลาด') {
+  error(text = 'une erreur est survenue, Merci de réessayer plus tard') {
 
     const option: SweetAlertOptions = {
-      title: 'เกิดข้อผิดพลาด',
+      title: 'Erreur !',
       text: text,
       type: 'error',
-      confirmButtonText: 'ตกลง'
+      confirmButtonText: 'Ok !'
     };
     swal(option);
 
   }
 
-  success(title = 'ดำเนินการเสร็จเรียบร้อย', text = '') {
+  success(title = 'Succes', text = '') {
 
     const option: SweetAlertOptions = {
       title: title,
       text: text,
       timer: 3000,
       type: 'success',
-      confirmButtonText: 'ตกลง'
+      confirmButtonText: 'Ok !'
     };
     swal(option)
       .then(() => { });
@@ -47,14 +47,14 @@ export class AlertService {
 
   confirm(text = 'คุณต้องการดำเนินการนี้ ใช่หรือไม่?', ) {
     const option: SweetAlertOptions = {
-      title: 'Are you sure?',
+      title: 'Attention ! ',
       text: text,
       type: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
-      confirmButtonText: 'ใช่, ดำเนินการ!',
-      cancelButtonText: 'ยกเลิก'
+      confirmButtonText: 'Oui, Je suis sûr !',
+      cancelButtonText: 'Annulé'
     };
      return swal(option);
   }
