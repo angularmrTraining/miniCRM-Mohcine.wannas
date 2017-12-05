@@ -32,7 +32,7 @@
     "moment": "^2.18.1",
     "mutationobserver-shim": "^0.3.2",
     "rxjs": "^5.4.3",
-    "sweetalert2": "^6.9.0",
+    "sweetalert2": "^7.0.7",
     "web-animations-js": "^2.3.1",
     "zone.js": "^0.8.17"
   },
