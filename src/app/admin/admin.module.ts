@@ -13,6 +13,7 @@ import { AlertService } from '../alert.service';
 import { LayoutComponent } from './layout/layout.component';
 import { ContactService } from 'app/admin/contact.service';
 import { ContactListComponent } from 'app/admin/contact-list/contact-list.component';
+import { ContactFormComponent } from 'app/admin/contact-form/contact-form.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,7 @@ import { ContactListComponent } from 'app/admin/contact-list/contact-list.compon
     ClarityModule,
     AuthModule
   ],
-  declarations: [MainPageComponent, LayoutComponent, ContactListComponent],
+  declarations: [MainPageComponent, LayoutComponent, ContactListComponent,ContactFormComponent],
   providers: [
     MainService,
     AlertService,

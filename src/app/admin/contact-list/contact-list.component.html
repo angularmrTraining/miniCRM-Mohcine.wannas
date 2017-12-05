@@ -5,10 +5,16 @@
           <clr-datagrid class="col-xs-12" *ngIf="contacts">
               <clr-dg-column>Nom</clr-dg-column>
               <clr-dg-column>Telephone</clr-dg-column>
-          
-              <clr-dg-row *ngFor="let contact of contacts">
+              <clr-dg-column>Action</clr-dg-column>
+              <clr-dg-row  *clrDgItems="let contact of contacts">
                   <clr-dg-cell>{{contact.name}}</clr-dg-cell>
                   <clr-dg-cell>{{contact.phoneNumber}}</clr-dg-cell>
+                  <clr-dg-cell>
+                        <button class="btn btn-sm btn-icon btn-link" (click)="goToForm(contact.id)">
+                                <clr-icon shape="pencil" class="is-solid"></clr-icon>                               
+                            Editer
+                        </button>
+                    </clr-dg-cell>
               </clr-dg-row>
           
               <clr-dg-footer>
@@ -18,3 +24,13 @@
               </clr-dg-footer>
           </clr-datagrid>
       </div>
+      <hr>
+
+        <div class="row flex-items-xs-right">
+            <div class="">
+                <button type="button" class="btn btn-icon btn-success" (click)="goToForm()">
+                        <clr-icon shape="plus"></clr-icon>
+                        Nouveau
+                </button>
+            </div>
+         </div>

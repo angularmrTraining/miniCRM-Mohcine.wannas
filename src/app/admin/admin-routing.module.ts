@@ -6,6 +6,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
 import { ContactListComponent } from 'app/admin/contact-list/contact-list.component';
+import { ContactFormComponent } from 'app/admin/contact-form/contact-form.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,8 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'main', pathMatch: 'full' },
       { path: 'main', component: MainPageComponent },
+      { path: 'contacts/:state', component: ContactFormComponent},
+      { path: 'contact/:id/:state', component: ContactFormComponent},
       { path: 'contacts', component: ContactListComponent },
       { path: '**', component: PageNotFoundComponent },
     ]
