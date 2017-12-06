@@ -14,6 +14,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { ContactService } from 'app/admin/contact.service';
 import { ContactListComponent } from 'app/admin/contact-list/contact-list.component';
 import { ContactFormComponent } from 'app/admin/contact-form/contact-form.component';
+import { MarkdownToHtmlModule } from 'ng2-markdown-to-html';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { ContactFormComponent } from 'app/admin/contact-form/contact-form.compon
     HelperModule,
     FormsModule,
     ClarityModule,
-    AuthModule
+    AuthModule,
+    MarkdownToHtmlModule.forRoot()
   ],
   declarations: [MainPageComponent, LayoutComponent, ContactListComponent,ContactFormComponent],
   providers: [

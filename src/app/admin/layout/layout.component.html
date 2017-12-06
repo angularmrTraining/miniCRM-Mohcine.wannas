@@ -10,27 +10,18 @@
       <a class=" nav-link nav-icon" routerLink='/admin/main' routerLinkActive='active'>
         <clr-icon shape="home"></clr-icon>
       </a>
-      <a class=" nav-link nav-icon" routerLink='/admin/labeler' routerLinkActive='active'>
+      <a class=" nav-link nav-icon" routerLink='/admin/contacts' routerLinkActive='active'>
         <clr-icon shape="group"></clr-icon>
-      </a>
-      <a class=" nav-link nav-icon" routerLink='/admin/generice-medicine' routerLinkActive='active'>
-        <clr-icon shape="tools"></clr-icon>
-      </a>
-      <a class=" nav-link nav-icon" routerLink='/admin/generice-medicine-supplier' routerLinkActive='active'>
-        <clr-icon shape="shopping-cart"></clr-icon>
-      </a>
-      <a class=" nav-link nav-icon" routerLink='/admin/packages' routerLinkActive='active'>
-        <clr-icon shape="archive"></clr-icon>
       </a>
     </div>
     <div class="header-actions">
       <clr-dropdown class="dropdown bottom-right">
         <button class="nav-text" clrDropdownToggle>
-          {{ fullname }}
+          {{ fullname}}
           <clr-icon shape="caret down"></clr-icon>
         </button>
         <div class="dropdown-menu">
-          <a (click)="logout()" clrDropdownItem>Deconnexion</a>
+          <a (click)="logout()" clrDropdownItem>Déconnexion</a>
         </div>
       </clr-dropdown>
     </div>
@@ -42,29 +33,13 @@
     </div>
 
     <clr-vertical-nav [clrVerticalNavCollapsible]="collapsible" [(clrVerticalNavCollapsed)]="collapsed">
-      <a clrVerticalNavLink routerLink="./normal" routerLinkActive="active">
-          <clr-icon clrVerticalNavIcon shape="user"></clr-icon>
-          Normal
+        <a clrVerticalNavLink routerLink="./contacts/" routerLinkActive="active">
+          <clr-icon clrVerticalNavIcon shape="view-list"></clr-icon>
+          List des contacts
       </a>
-      <a clrVerticalNavLink routerLink="./electric" routerLinkActive="active">
-          <clr-icon clrVerticalNavIcon shape="bolt"></clr-icon>
-          Electric
-      </a>
-      <a clrVerticalNavLink routerLink="./poison" routerLinkActive="active">
-          <clr-icon clrVerticalNavIcon shape="sad-face"></clr-icon>
-          Poison
-      </a>
-      <a clrVerticalNavLink routerLink="./grass" routerLinkActive="active">
-          <clr-icon clrVerticalNavIcon shape="bug"></clr-icon>
-          Grass
-      </a>
-      <a clrVerticalNavLink routerLink="./fighting" routerLinkActive="active">
-          <clr-icon clrVerticalNavIcon shape="shield"></clr-icon>
-          Fighting
-      </a>
-      <a clrVerticalNavLink routerLink="./credit" routerLinkActive="active">
-          <clr-icon clrVerticalNavIcon shape="certificate"></clr-icon>
-          Credit
+      <a clrVerticalNavLink routerLink="./contacts/add" routerLinkActive="active">
+          <clr-icon clrVerticalNavIcon shape="plus"></clr-icon>
+          Nouveau contact
       </a>
   </clr-vertical-nav>
   </div>
