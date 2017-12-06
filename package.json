@@ -12,15 +12,15 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^4.4.3",
-    "@angular/common": "^4.4.3",
-    "@angular/compiler": "^4.4.3",
-    "@angular/core": "^4.4.3",
-    "@angular/forms": "^4.4.3",
-    "@angular/http": "^4.4.3",
-    "@angular/platform-browser": "^4.4.3",
-    "@angular/platform-browser-dynamic": "^4.4.3",
-    "@angular/router": "^4.4.3",
+    "@angular/animations": "^5.0.0",
+    "@angular/common": "^5.0.0",
+    "@angular/compiler": "^5.0.0",
+    "@angular/core": "^5.0.0",
+    "@angular/forms": "^5.0.0",
+    "@angular/http": "^5.0.0",
+    "@angular/platform-browser": "^5.0.0",
+    "@angular/platform-browser-dynamic": "^5.0.0",
+    "@angular/router": "^5.0.0",
     "@webcomponents/custom-elements": "^1.0.0",
     "angular2-jwt": "^0.2.3",
     "clarity-angular": "^0.10.6",
@@ -31,14 +31,14 @@
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "mutationobserver-shim": "^0.3.2",
-    "rxjs": "^5.4.3",
+    "rxjs": "^5.5.2",
     "sweetalert2": "^7.0.7",
     "web-animations-js": "^2.3.1",
     "zone.js": "^0.8.17"
   },
   "devDependencies": {
     "@angular/cli": "1.4.3",
-    "@angular/compiler-cli": "^4.4.3",
+    "@angular/compiler-cli": "^5.0.0",
     "@types/jasmine": "2.6.0",
     "@types/lodash": "^4.14.74",
     "@types/node": "~8.0.29",
@@ -54,6 +54,6 @@
     "protractor": "~5.1.2",
     "ts-node": "~3.3.0",
     "tslint": "~5.7.0",
-    "typescript": "^2.5.3"
+    "typescript": "^2.4.2"
   }
 }
