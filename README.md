@@ -1,13 +1,15 @@
-# Clarity and Angular 4 seed template
+# Mini CRM : Mohcine WANNAS
 
 ## Installation
 
 ```
-git clone https://github.com/siteslave/clarity-angular4-web.git
+git clone https://github.com/angularmrTraining/miniCRM-Mohcine.wannas.git
 
 cd clarity-angular4-web
 
 npm i
+
+npm install -g json-server
 ```
 
 ## Running app
@@ -16,16 +18,19 @@ npm i
 ng serve
 ```
 
+## Running api
+
+```
+json-server --watch db.json
+```
+
 app url `http://localhost:4200`  
 
 username: `admin` and password: `admin`
+
 ## Building
 
 ```
 ng build --prod
 ```
 
-## Screen short
-
-![screenshort](./ss/00.png)
-![screenshort](./ss/01.png)
