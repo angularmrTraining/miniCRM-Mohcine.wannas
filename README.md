@@ -5,7 +5,7 @@
 ```
 git clone https://github.com/angularmrTraining/miniCRM-Mohcine.wannas.git
 
-cd clarity-angular4-web
+cd miniCRM-Mohcine.wannas
 
 npm i
 
